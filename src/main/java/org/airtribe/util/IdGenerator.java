@@ -1,0 +1,21 @@
+package org.airtribe.util;
+
+public class IdGenerator {
+
+    private static int studentIdCounter = 1000;
+    private static int courseIdCounter = 2000;
+    private static int enrollmentIdCounter = 3000;
+
+    public static int getNextStudentId() {
+        return ++studentIdCounter;
+    }
+
+    public static int getNextCourseId() {
+        return ++courseIdCounter;
+    }
+
+    public static int getNextEnrollmentId() {
+        return ++enrollmentIdCounter;
+    }
+}
+
